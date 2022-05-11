@@ -24,3 +24,30 @@ function linkAction(){
   navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+/* ===Scroll Reveal animation*/
+
+ScrollReveal({
+    reset:true,
+    distance:'80px',
+    duration:2000,
+    origin:'top',
+});
+/*scroll Home */
+ScrollReveal().reveal('.section-title',{delay:200,origin:'left'})
+ScrollReveal().reveal('.home_title',{delay:200,origin:'left'})
+ScrollReveal().reveal('.home_img',{delay:400})
+ScrollReveal().reveal('.button',{delay:200})
+ScrollReveal().reveal('.home_social-icon',{intervel:200,origin:'top'})
+/*scroll  About*/
+ScrollReveal().reveal(".about_img",{})
+ScrollReveal().reveal(".about_subtitle",{delay:200})
+ScrollReveal().reveal(".about_text",{delay:400})
+/*scroll  skills*/
+ScrollReveal().reveal(".skills_subtitle",{})
+ScrollReveal().reveal(".skills_text",{delay:200})
+ScrollReveal().reveal(".skills_data",{interval:200,origin:'left'})
+ScrollReveal().reveal(".skills_img",{delay:400,origin:'right'})
+/*scroll Work*/
+ScrollReveal().reveal(".work_img",{interval:200})
+/*scroll  contact*/
+ScrollReveal().reveal(".contact_input",{interval:200})
